@@ -298,6 +298,20 @@ public class Browser_Launch {
 				.size();
 		System.out.println(rowCount);
 	}
+	
+	@Test(priority = 0)
+	public void verifyWebTable222222222222222222() throws InterruptedException {
+
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,750)", "");
+		Thread.sleep(2000);
+
+		int rowCount = driver.findElements(By.xpath(
+				"/html[1]/body[1]/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr"))
+				.size();
+		System.out.println(rowCount);
+	}
 
 	@Test
 	public void selectRadioButton() throws Exception {
