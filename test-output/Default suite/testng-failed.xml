@@ -6,8 +6,8 @@
       <class name="Selenium_ecomm.Browser_Launch">
         <methods>
           <include name="launchBrowser"/>
+          <include name="inputResize"/>
           <include name="tearDown"/>
-          <include name="login"/>
         </methods>
       </class> <!-- Selenium_ecomm.Browser_Launch -->
     </classes>
